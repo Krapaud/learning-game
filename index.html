@@ -1,0 +1,62 @@
+<!DOCTYPE         <h1 class="game-title">🎮 Super Smash Bros Ultimate Clone 🎮</h1>tml>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Smash Bros Ultimate Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">� Super Smash Bros vs IA 🥊</h1>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="controls-info">
+            <h3>🎮 Super Smash Bros Ultimate Clone</h3>
+            <div class="controls-row">
+                <div class="player-controls player1">
+                    <strong>Joueur (Sélectionnable)</strong><br>
+                    <strong>Personnages:</strong><br>
+                    🔴 Mario - Équilibré<br>
+                    🗡️ Link - Rapide<br>
+                    ⚡ Pikachu - Léger<br>
+                    🚀 Samus - Lourd<br><br>
+                    <strong>Contrôles:</strong><br>
+                    Déplacement: A / D<br>
+                    Saut: W<br>
+                    Attaques: S/Q/E/X
+                </div>
+                <div class="player-controls player2">
+                    <strong>Stages Disponibles:</strong><br>
+                    🏔️ <strong>Battlefield</strong> - Classique<br>
+                    🌌 <strong>Final Destination</strong> - Espace<br>
+                    🏟️ <strong>Pokemon Stadium</strong> - Arène<br>
+                    🏰 <strong>Hyrule Castle</strong> - Château<br><br>
+                    <strong>Items & Power-ups:</strong><br>
+                    ⚪ Pokeball | 🏏 Homerun Bat<br>
+                    ❤️ Heart | ⭐ Star | 💣 Bomb<br>
+                    🍄 Mushroom
+                </div>
+            </div>
+            <div style="margin-top: 15px; border-top: 1px solid #444; padding-top: 10px;">
+                <strong>Modes de Jeu:</strong><br>
+                🤖 <strong>VS CPU</strong> - Combat contre l'IA avec 4 niveaux de difficulté<br>
+                ⏱️ <strong>Time Battle</strong> - Combat chronométré (2 minutes)<br>
+                ❤️ <strong>Stock Battle</strong> - Combat avec vies (3 stocks)<br>
+                🎯 <strong>Training</strong> - Mode entraînement
+            </div>
+            <div style="margin-top: 10px;">
+                <strong>Navigation:</strong> WASD/Flèches = Menu | Enter = Confirmer | R = Reset
+            </div>
+        </div>
+    </div>
+    
+    <!-- Include all game systems -->
+    <script src="characters.js"></script>
+    <script src="stages.js"></script>
+    <script src="items.js"></script>
+    <script src="menus.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
