@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#667eea" rx="6"/>
+  
+  <!-- Game controller shape -->
+  <rect x="4" y="12" width="24" height="12" fill="#FFD700" rx="6"/>
+  
+  <!-- D-pad -->
+  <rect x="8" y="16" width="2" height="6" fill="#4A90E2"/>
+  <rect x="6" y="18" width="6" height="2" fill="#4A90E2"/>
+  
+  <!-- Action buttons -->
+  <circle cx="22" cy="17" r="2" fill="#E24A4A"/>
+  <circle cx="26" cy="19" r="2" fill="#4CAF50"/>
+  
+  <!-- Center highlight -->
+  <rect x="14" y="16" width="4" height="4" fill="#FF6B35" rx="2"/>
+</svg>

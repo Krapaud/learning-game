@@ -138,7 +138,9 @@ class SelectionScreen {
             
             // Stage preview (simplified)
             ctx.save();
-            ctx.clipRect(x, y, previewWidth, previewHeight);
+            ctx.beginPath();
+            ctx.rect(x, y, previewWidth, previewHeight);
+            ctx.clip();
             
             const StageClass = STAGES[stageName];
             const tempStage = new StageClass();

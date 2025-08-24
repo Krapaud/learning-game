@@ -443,6 +443,12 @@ const POWERUP_TYPES = {
 
 // Game functions
 function initializeGame(selectedCharacter, selectedStage, mode) {
+    // Safety check
+    if (!mode) {
+        console.error('Mode is null or undefined');
+        return;
+    }
+    
     gameMode = mode;
     
     // Create stage
@@ -478,7 +484,7 @@ function initializeGame(selectedCharacter, selectedStage, mode) {
     );
     
     // Setup AI if needed
-    if (mode.name === 'VS CPU') {
+    if (mode && mode.name === 'VS CPU') {
         const AI_CONFIG = {
             MEDIUM: {
                 reactionTime: 20,
@@ -850,6 +856,7 @@ window.addEventListener('keydown', (e) => {
     if (gameState === 'menu') {
         const selectedMode = gameModeScreen.handleInput(e.key);
         if (selectedMode) {
+            gameMode = selectedMode;
             gameState = 'selection';
             selectionScreen = new SelectionScreen();
         }
